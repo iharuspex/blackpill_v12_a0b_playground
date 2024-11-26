@@ -1,0 +1,5 @@
+{
+    "cortex-debug.gdbPath": "${env:GNAT_ARM_ELF_ALIRE_PREFIX}/bin/arm-eabi-gdb",
+    "editor.tabSize": 3,
+    "ada.projectFile": "blackpill_v12_a0b_playground.gpr"
+}
