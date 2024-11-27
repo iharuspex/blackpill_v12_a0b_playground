@@ -16,24 +16,16 @@ generate_ada = false
 generate_c = false
 generate_gpr = true
 
+[configuration.values]
+light_blackpill_stm32f401.stm32f401 = "CC"
+
 [[depends-on]]
 gnat_arm_elf = "*"
 a0b_base = "*"
 a0b_time = "*"
 a0b_stm32f401_gpio = "*"
 a0b_armv7m_systick_clock = "*"
-# lm75 deps
-# a0b_exti = "*"
 a0b_i2c = "*"
-
-[configuration.values]
-light_blackpill_stm32f401.stm32f401 = "CC"
-
-# [[depends-on]]
-# test_lib = "~0.1.0-dev"
-
-[[depends-on]]
-light_blackpill_stm32f401 = "~0.2.0-dev"
-
-[[pins]]
-light_blackpill_stm32f401 = { path='../light-startup/blackpill_stm32f401' }
+a0b_stm32f401_i2c = "*"
+a0b_stm32f401_dma = "*"
+light_blackpill_stm32f401 = "*"

@@ -7,11 +7,11 @@
         {
             "name": "stlink",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/bin/simple_stm32_project.elf",
+            "executable": "${workspaceRoot}/bin/firmware.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
-            "runToEntryPoint": "Simple_Stm32_Project",
+            "runToEntryPoint": "Blackpill_Playground",
             // "svdFile": "${workspaceRoot}/config/svd/STM32F405.svd",
             // "preLaunchTask": "ada: Build current project",
             "configFiles": [

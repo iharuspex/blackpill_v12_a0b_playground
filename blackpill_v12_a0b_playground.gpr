@@ -10,15 +10,15 @@ project Blackpill_v12_A0b_Playground is
    for Target use Light_Blackpill_Stm32f401'Target;
    for Runtime use Light_Blackpill_Stm32f401'Runtime;
 
-   for Source_Dirs use ("src/", "config/", "src/drivers/lm75");
+   for Source_Dirs use ("src/", "config/", "src/drivers/lm75", "src/board");
    for Object_Dir use "obj/" & Blackpill_V12_A0b_Playground_Config.Build_Profile;
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
 
-   for Main use ("simple_stm32_project.adb");
+   for Main use ("blackpill_playground.adb");
 
    package Builder is
-      for Executable ("simple_stm32_project.adb") use Project'Name & ".elf";
+      for Executable ("blackpill_playground.adb") use "firmware.elf";
    end Builder;
 
    package Compiler is
